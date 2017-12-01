@@ -5,7 +5,16 @@ longitude
 DOB (year?)
 city
 employment_status
-pre_conditions (NEED TO SPECIFY)
+Chronic viral hepatitis B without delta-agent Risk_factor
+Ataxic cerebral palsy Risk_factor
+Diarrhea, unspecified Risk_factor
+Tachycardia, unspecified Risk_factor
+Obstructive Sleep Apnea Risk_factor
+Unspecified fracture of specified metacarpal bone with unspecified laterality Risk_factor
+Other abnormalities of heart beat Risk_factor
+Type 2 diabetes mellitus with hyperglycemia Risk_factor
+HIV disease resulting in other bacterial infections Risk_factor
+cough with hemorrhage Risk_factor
 people_covered
 optional_insured
 annual_income
