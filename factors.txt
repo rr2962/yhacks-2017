@@ -1,0 +1,25 @@
+latitude
+state
+sex
+longitude
+DOB (year?)
+city
+employment_status
+pre_conditions (NEED TO SPECIFY)
+people_covered
+optional_insured
+annual_income
+marital_status
+height
+weight
+tobacco
+gold
+bronze
+silver
+platinum
+purchased
+base_price
+ad_d
+deductible
+plan_name
+coverage_amount
