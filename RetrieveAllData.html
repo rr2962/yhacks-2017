@@ -1,0 +1,21 @@
+<html>
+
+  <head>
+    <script>
+      function search() {
+        //Search Participants and retrieve the Participant name, date of birth and gender
+        //SELECT pi.name, pi.DOB, pi.sex FROM v_participant pi WHERE pi.state = 'Alaska'
+        url = "https://v3v10.vitechinc.com/solr/v_participant";
+        fetch(url)
+          .then(res => res.json())
+          .then(body => alert(body.response.numFound))
+          .catch(alert)
+      }
+    </script>
+  </head>
+
+  <body>
+    <input type="button" value="Search" onclick="search()" />
+  </body>
+
+</html>
