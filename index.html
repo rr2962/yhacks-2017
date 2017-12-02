@@ -2,12 +2,6 @@
 <html lang="en">
 
   <head>
-    <style type="text/css">
-      body{
-        font-family: Arial
-
-      }
-    </style>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
@@ -20,6 +14,7 @@
 
     <!-- Custom styles for this template -->
     <link href="css/scrolling-nav.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bootstrap/css/vitech.css">
 
   </head>
 
@@ -33,7 +28,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto">
+          <ul class="navbar-nav ml-auto" style="list-style: none;">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#about">Personalization</a>
             </li>
@@ -75,31 +70,111 @@
         <h2>Enter Your Information</h2>
         <form action="/action_page.php">
 
-          <label for="fname">First Name</label>
-          <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
 
-          <label for="lname">Last Name</label>
-          <input type="text" id="lname" name="lastname" placeholder="Your last name..">
-          <label for = "health issues">Health Issues</label>
-          <select>
-            <option value="Chronic viral hepatitis B without delta-agent">  Chronic viral hepatitis B without delta-agent          </option>
-            <option value= "Ataxic cerebral palsy"> Ataxic cerebral palsy </option>
-            <option value = "Diarrhea"> Diarrhea </option>
-            <option value = "Tachycardia"> Tachycardia
-                      </select>
-            <option value = "Obstructive Sleep Apnea"> Obstructive Sleep Apnea </option>
-            <option value="Unspecified fracture of specified metacarpal bone with unspecified laterality"> Fractured bone</option>
-            <option value="Other abnormalities of heart beat"> Other abnormalities of heart beat</option>
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-          </select>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
 
-          <label for="subject">Subject</label>
-          <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            <label for ="state"> State </label>
+            <input type="text" id="lname" name="state" placeholder="The state you live in">
 
+            <label for = "DOB"> Date of Birth </label>
+            <input type="text" id = "DOB" name="age" placeholder="Your birthdate..">
+
+            <label for = "city"> City </label>
+            <input type="text" name="city" placeholder="The city you live in">
+
+            <label for="employment-status" > Current Employment Status </label>
+            <select id="employment-status" name="employment-status">
+              <option value="fulltime"> Full-Time </option>
+              <option value="parttime"> Part-Time </option>
+              <option value="unemployed"> Unemployed </option>
+            </select>
+
+
+            <div class="container">
+  <div class="row">
+  <form>
+    <fieldset>
+      <label class="checkbox">
+        <input type="checkbox" checked="Chronic viral hepatitis B without delta-agent" ><span>Chronic viral hepatitis B without delta-agent</span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+       <input type="checkbox" checked="Ataxic cerebral palsy"><span>Ataxic cerebral palsy</span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+       <input type="checkbox" checked="Diarrhea"> <span>Diarrhea</span> 
+      </label>
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+        <input type="checkbox" checked="Tachycardia"> <span>Tachycardia</span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+        <input type="checkbox" checked="Obstructive Sleep Apnea"> <span>Obstructive Sleep Apnea</span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+        <input type="checkbox" checked="Unspecified fracture of specified metacarpal bone with unspecified laterality" > <span>Fractured bone</span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+        <input type="checkbox" checked="Other abnormalities of heart beat"> <span>Other abnormalities of heart beat</span>
+      </label>
+    </fieldset>
+    <fieldset>
+      <label class="checkbox">
+        <input type="checkbox" checked="None"> <span>None</span>
+      </label>
+    </fieldset>
+  </form>
+  </div>
+</div>
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+              <option value="australia">Australia</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+
+            <label for="people_covered" > How many individuals will be covered including you? </label>
+            <input type="text" name="people_covered" placeholder="All covered individuals including you">
+
+            <label for="optional_insured"> Optional: How much additional money would you like to add?</label>
+            <input type="text" name="optional_insured" placeholder="0">
+
+            <label for"annual_income"> What is your annual income? </label>
+            <input type="text" name="annual_income" placeholder="0">
+
+            <label for="marital_status"> What is your marital status? </label>
+            <select id="marital_status" name="marital_status">
+              <option value="S"> Single </option>
+              <option value="M"> Married </option>
+              <option value="D"> Divorced </option>
+              <option value="W"> Widowed </option>
+            </select>
+
+            <label for="height"> What is your height in inches? </label>
+            <input type="text" name="height" placeholder="Your height">
+
+            <label for="weight"> What is your weight in pounds? </label>
+            <input type="text" name="weight" placeholder="Your weight">
+
+            <label for="tobacco"> Do you smoke or otherwise ingest tobacco or tobacco products? </label>
+            <select id="tobacco" name="tobacco">
+                <option value="Yes"> Yes </option>
+                <option value="No"> No </option>
+            </select>
           <input type="submit" value="Submit">
 
         </form>
@@ -109,9 +184,43 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Your Insurance Options</h2>
-            <p class="lead">Bronze, Silver, Gold, and Platinum Plans Information</p>
           </div>
         </div>
+            <p class="lead">Bronze, Silver, Gold, and Platinum Plans Information</p>
+          <div class="table">
+            <table border=2px width="100%">
+              <thead> 
+                <tr style="text-align: center">
+
+                  <th style="background-color: gray"> </th>
+                  <th> Benefits  </th>
+                  <th> Premium </th>
+                <th> Deductible </th>
+              </tr>
+            <div class="row text-center">
+              <tr>
+                <th> Platinum </th>
+              </tr>
+            </div>
+            <div class="row text-center">
+              <tr>
+                <th> Gold </th>
+              </tr>
+            </div>
+            <div class="row text-center">
+              <tr>
+                <th> Silver </th>
+              </tr>
+            </div>
+            <div class="row text-center">
+              <tr>
+                <th> Bronze </th>
+              </tr>
+            </div>
+            </thead>
+             
+            </table>
+            </div>
       </div>
     </section>
 
@@ -120,7 +229,6 @@
         <div class="row">
           <div class="col-lg-8 mx-auto">
             <h2>Our Insurance Recommendations</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero odio fugiat voluptatem dolor, provident officiis, id iusto! Obcaecati incidunt, qui nihil beatae magnam et repudiandae ipsa exercitationem, in, quo totam.</p>
           </div>
         </div>
       </div>
@@ -142,7 +250,8 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 
 </html>
