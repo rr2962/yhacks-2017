@@ -1,3 +1,4 @@
+
 Generic Link:
 https://v3v10.vitechinc.com/solr/v_participant/select?indent=on&wt=json&q=*:*&rows=1000&fl=name,DOB,sex
 ^^ CHANGE rows=1000 to whatever number we want
@@ -24,3 +25,57 @@ https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&q={!join%20from=id%20
 
 PLAN DETAIL
 https://v3v10.vitechinc.com/solr/v_plan_detail/select?indent=on&wt=json&q=*:*&rows=1000&fl=BASE_PRICE,AD_D,DEDUCTIBLE,PLAN_NAME,COVERAGE_AMOUNT
+
+STATES LIST 1
+Alabama 
+Alaska 
+Arizona 
+Arkansas 
+California 
+Colorado 
+Connecticut 
+Delaware 
+Florida 
+Georgia 
+Hawaii 
+Idaho 
+Illinois 
+Indiana 
+Iowa 
+Kansas 
+Kentucky 
+Louisiana 
+Maine 
+Maryland 
+Massachusetts 
+Michigan 
+Minnesota 
+Mississippi 
+Missouri 
+Montana 
+
+STATE LIST 2
+Nebraska 
+Nevada 
+New Hampshire 
+New Jersey 
+New Mexico 
+New York 
+North Carolina 
+North Dakota 
+Ohio 
+Oklahoma 
+Oregon 
+Pennsylvania 
+Rhode Island 
+South Carolina 
+South Dakota 
+Tennessee 
+Texas 
+Utah 
+Vermont 
+Virginia 
+Washington 
+West Virginia 
+Wisconsin 
+Wyoming 
