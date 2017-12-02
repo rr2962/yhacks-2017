@@ -5,6 +5,9 @@ https://v3v10.vitechinc.com/solr/v_participant/select?indent=on&wt=json&q=*:*&ro
 PARTICIPANT DETAILS
 https://v3v10.vitechinc.com/solr/v_participant_detail/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, EMPLOYMENT_STATUS, PRE_CONDITIONS, PEOPLE_COVERED, OPTIONAL_INSURED, ANNUAL_INCOME, MARITAL_STATUS, HEIGHT, WEIGHT, TOBACCO
 
+SEARCHING PARTICIPANT DETAILS:
+https://v3v10.vitechinc.com/solr/v_participant_detail/select?indent=on&wt=json&q=*:*&rows=10000&fl=id,EMPLOYMENT_STATUS,PRE_CONDITIONS,PEOPLE_COVERED,OPTIONAL_INSURED,ANNUAL_INCOME,MARITAL_STATUS,HEIGHT,WEIGHT,TOBACCO
+
 After fl=name,DOB,sex   add whatever fields you want to search for
 
 PARTICIPANT
@@ -15,6 +18,9 @@ https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&q=*:*&wt=json&rows=10
 https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, GOLD
 https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, SILVER
 https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, BRONZE
+
+Searching quotes:
+https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&q={!join%20from=id%20to=id%20fromIndex=v_quotes}PURCHASED=Silver&wt=json&rows=1000000&fl=id,PLATINUM
 
 PLAN DETAIL
 https://v3v10.vitechinc.com/solr/v_plan_detail/select?indent=on&wt=json&q=*:*&rows=1000&fl=BASE_PRICE,AD_D,DEDUCTIBLE,PLAN_NAME,COVERAGE_AMOUNT
