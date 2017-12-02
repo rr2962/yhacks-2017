@@ -14,3 +14,6 @@ QUOTES
 https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, GOLD
 https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, SILVER
 https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, BRONZE
+
+PLAN DETAIL
+https://v3v10.vitechinc.com/solr/v_plan_detail/select?indent=on&wt=json&q=*:*&rows=1000&fl=BASE_PRICE,AD_D,DEDUCTIBLE,PLAN_NAME,COVERAGE_AMOUNT
