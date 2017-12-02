@@ -1,4 +1,8 @@
 Generic Link:
 https://v3v10.vitechinc.com/solr/v_participant/select?indent=on&wt=json&q=*:*&rows=1000&fl=name,DOB,sex
 ^^ CHANGE rows=1000 to whatever number we want
+
+PARTICIPANT DETAILS
+https://v3v10.vitechinc.com/solr/v_participant_detail/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, EMPLOYMENT_STATUS, PRE_CONDITIONS, PEOPLE_COVERED, OPTIONAL_INSURED, ANNUAL_INCOME, MARITAL_STATUS, HEIGHT, WEIGHT, TOBACCO
+
 After fl=name,DOB,sex   add whatever fields you want to search for
