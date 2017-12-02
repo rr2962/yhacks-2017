@@ -1,0 +1,4 @@
+Generic Link:
+https://v3v10.vitechinc.com/solr/v_participant/select?indent=on&wt=json&q=*:*&rows=1000&fl=name,DOB,sex
+^^ CHANGE rows=1000 to whatever number we want
+After fl=name,DOB,sex   add whatever fields you want to search for
