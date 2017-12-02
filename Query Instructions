@@ -9,3 +9,8 @@ After fl=name,DOB,sex   add whatever fields you want to search for
 
 PARTICIPANT
 https://v3v10.vitechinc.com/solr/v_participant/select?indent=on&wt=json&q=*:*&rows=100000&fl=id,city,DOB,longitude,sex,state,latitude,name
+
+QUOTES
+https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, GOLD
+https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, SILVER
+https://v3v10.vitechinc.com/solr/v_quotes/select?indent=on&wt=json&q=*:*&rows=1000000&fl=id, BRONZE
