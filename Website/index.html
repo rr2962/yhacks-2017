@@ -25,22 +25,6 @@
       <div class="container">
         <br>
         <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 45px; color: white">ViTech Insurance Analytics</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav ml-auto" id = "menu">
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#about">Personalization</a>&nbsp
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Information</a>&nbsp
-            </li>
-            <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#contact">Recommendations</a>
-            </li>
-          </ul>
-         </div>
       </div>
     </nav>
 
@@ -55,16 +39,15 @@
       <div class="container">
         <div class="row">
           <h1> ViTech Insurance Analytics</h1>
-
           <p> With ViTech Insurance Analytics (VIA), you can find your life insurance quote with just a few simple questions! Simply enter your information below, and we will provide a personalized insurance estimate.</p>
         </div>
       </div>
     </section>
+
+    <!--Form that allows the user to enter their information in order to predict their pricing.-->
     <form action="action_page.php" method="get">
-    <section>
       <div class="container">
         <h2 id="steps">Enter Your Information</h2>
-        
           <div class="row" id = "personal-info">
             <label for="fname">First Name</label>
             <input type="text" id="fname" name="firstname" placeholder="Your name.."> <br>
@@ -85,23 +68,24 @@
                <option value="D"> Divorced </option>
                <option value="W"> Widowed </option>
              </select>
-             <br>
+            <br>
 
             <label for="people_covered" > How many individuals will be covered? </label>
             <input type="text" name="people_covered" placeholder="All covered individuals">
             <img title="Enter the number of all individuals on the insurance plan, including yourself." src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20"> 
             <br>
           </div>
+
           <div class="row" id="personal-info">
-
-
             <label for ="state"> State </label>
             <input type="text" id="lname" name="state" placeholder="The state you live in"> 
             <img title="Use the whole, nonabbreviated word for your state." src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20">
             <br>
-             <label>What is your latitude and longitude? If you do not know your exact location, click <a href="https://www.maps.ie/coordinates.html" target="_blank"> here</a>. </label>  <br>
+             <label>What is your latitude and longitude? If you do not know your exact location, click <a href="https://www.maps.ie/coordinates.html" target="_blank"> here</a>. </label> 
+            <br>
             <label for ="latitude">Latitude</label>
-            <input type="text" name="latitude" placeholder="0"> <br>
+            <input type="text" name="latitude" placeholder="0"> 
+    
             <label for="longitude">Longitude</label>
             <input type="text" name="longitude" placeholder="0"> <br>
 
@@ -112,17 +96,17 @@
                 <option value="No"> No </option>
             </select>
             <br>
-                        <label for="optional_insured"> Optional: How much additional money would you like to add?</label>
+
+            <label for="optional_insured"> Optional: How much additional money would you like to add?</label>
             <input type="text" name="optional_insured" placeholder="0">  <br>
 
             <label for"annual_income"> What is your annual income? </label>
             <input type="text" name="annual_income" placeholder="0">  <br>
-          <a id="button"><input type="submit" value="Submit"></a>
+
+            <a id="button"><input type="submit" value="Submit"></a>
           </div>
 
-        </div>
       </div>
-    </section>
     </form>
 
     <!-- Footer -->
@@ -130,7 +114,6 @@
       <div class="container">
         <p class="m-0 text-center text-white">Copyright &copy; ViTech Analytics</p>
       </div>
-      <!-- /.container -->
     </footer>
 
     <!-- Bootstrap core JavaScript -->

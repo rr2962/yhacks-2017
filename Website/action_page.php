@@ -17,8 +17,10 @@
 </head>
 
 <body id="page-top">
+    <!-- Topmost section of page: has the ability to skip down to the area of interest by click on the top right words-->
      <div class="container">
       <br>
+        <!--Site Title-->
         <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 45px; color: white"> ViTech Insurance Analytics
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -28,7 +30,7 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto" id = "menu">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#options">Options</a>&nbsp&nbsp
+              <a class="nav-link js-scroll-trigger" href="#banner">Options</a>&nbsp&nbsp
             </li>
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#recommendations">Recommendations</a>
@@ -37,59 +39,54 @@
         </div>
       </div>
       <br>
-    <section id="services" class="bg-light">
-      <div class="container">
-        <div class="row">
 
-   <header class="bg-primary text-white">
-    
-      <div class="container text-center" id="banner">
-        <h2 id="steps">Your Insurance Options</h2>
-        <p class="lead">Compare coverage and prices side by side</p>
-        
-      </div>
-    </header>
+    <!-- Creates the "banner" that describes the purpose of the page-->
+  
+       <header class="bg-primary text-white">
+        <div class="container text-center" id="banner">
+            <h2 id="steps">Your Insurance Options</h2>
+            <p class="lead">Compare coverage and prices side by side</p>
         </div>
-        <br>
-        <div class="table" id = "options" >
-            <h2>Bronze, Silver, Gold, and Platinum Plans Information</h2>
-          
-            <table width="100%">
-              <thead> 
-                <tr id="steps">
+       </header>
 
-                  <th> Plan Type </th>
-                  <th> Benefits  </th>
-                  <th> Premium </th>
-                <th> Deductible </th>
-              </tr>
-            <div class="row">
-              <tr>
-                <th > <img src="https://blueastral.com/wp-content/uploads/platinum_opt.png" alt="Platinum" style="color: rgb(226, 226, 226)" height="120"; width="120"> </th>
-              </tr>
-            </div>
-            <div class="row">
-              <tr>
-                <th> <img src="http://vignette2.wikia.nocookie.net/criminal-case-grimsborough/images/a/a9/Gold_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140102" alt="Gold" style="color: rgb(255, 233, 0)" height="140"; width="100"> </th>
-              </tr>
-            </div>
-            <div class="row">
-              <tr>
-                <th> <img src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough/images/7/7f/Silver_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140409" alt="Silver"  style="color: rgb(153, 153, 153)" height="140"; width="100"> </th>
-              </tr>
-            </div>
-            <div class="row">
-              <tr>
-                <th> <img src="http://vignette4.wikia.nocookie.net/criminal-case-grimsborough/images/7/71/Bronze_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140520" alt="Bronze" style="color: rgb(193, 146, 3);" height="140" width="100"> </th>
-              </tr>
-            </div>
-            </thead>
-             
-            </table>
-            </div>
+      <br>
+    <!-- Creates the comparison table-->
+    <div class="table" id = "options" >
+      <h2>Bronze, Silver, Gold, and Platinum Plans Information</h2>
+      <table width="100%">
+        <thead> 
+          <tr id="steps">
+            <th> Plan Type </th>                  
+            <th> Base Price  </th>
+            <th> AD&D <img title="Accidental Death and Dismemberment" src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20">  </th> 
+            <th> Deductible </th>
+            <th> Coverage Amount </th>
+          </tr>
+        </thead>
+      <!-- Each row creates the section for each plan.-->
+      <div class="row">
+        <tr>
+           <th> <img src="https://blueastral.com/wp-content/uploads/platinum_opt.png" alt="Platinum" style="color: rgb(226, 226, 226)" height="120"; width="120"> </th>
+        </tr>
       </div>
-    </section>
-
+      <div class="row">
+        <tr>
+          <th> <img src="http://vignette2.wikia.nocookie.net/criminal-case-grimsborough/images/a/a9/Gold_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140102" alt="Gold" style="color: rgb(255, 233, 0)" height="140"; width="100"> </th>
+        </tr>
+      </div>
+      <div class="row">
+        <tr>
+          <th> <img src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough/images/7/7f/Silver_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140409" alt="Silver"  style="color: rgb(153, 153, 153)" height="140"; width="100"> </th>
+        </tr>
+      </div>
+      <div class="row">
+        <tr>
+          <th> <img src="http://vignette4.wikia.nocookie.net/criminal-case-grimsborough/images/7/71/Bronze_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140520" alt="Bronze" style="color: rgb(193, 146, 3);" height="140" width="100"> </th>
+        </tr>
+      </div>
+      </table>
+    </div>
+    <!-- Directs the user to the recommended plan-->
     <section id="recommendations">
       <div class="container">
         <div class="row">
@@ -118,6 +115,6 @@
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</body>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>
