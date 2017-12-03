@@ -42,7 +42,14 @@ td {
 	color: white;
 	text-align: center;
 }
+li {
+	text-align: right;
+}
 
 #button a:hover { 
   opacity:1;
+}
+#navbarResponsive {
+	float:right;
+	margin-top: 60px;
 }

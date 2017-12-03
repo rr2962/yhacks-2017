@@ -20,14 +20,15 @@
     <!-- Topmost section of page: has the ability to skip down to the area of interest by clicking on the top right words-->
      <div class="container">
       <br>
-        <!--Site Title-->
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 45px"> ViTech Insurance Analytics
+        <!--Site Logo--> 
+        <a href="https://vitechinc.com">
+          <img src="https://www.vitechinc.com/wordpress/wp-content/uploads/2015/10/Official-Logo-Website.jpg">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        &nbsp
-        <div class="collapse navbar-collapse" id="navbarResponsive">
+    
+        <div class="collapse navbar-collapse" id="navbarResponsive" >
           <ul class="navbar-nav ml-auto" id = "menu">
             <li class="nav-item">
               <a class="nav-link js-scroll-trigger" href="#banner">Options</a>&nbsp&nbsp

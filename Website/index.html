@@ -20,10 +20,12 @@
 
   <body id="page-top">
 
-    <!-- Navigation -->
       <div class="container">
-        <br>
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 45px">ViTech Insurance Analytics</a>
+       <!--Site Logo-->
+        <br> 
+        <a href="https://vitechinc.com">
+          <img src="https://www.vitechinc.com/wordpress/wp-content/uploads/2015/10/Official-Logo-Website.jpg">
+        </a>
       </div>
 
     <header class="bg-primary text-white">
@@ -36,7 +38,7 @@
     <section id="about">
       <div class="container">
         <div class="row">
-          <h1> ViTech Insurance Analytics</h1>
+          <h1> Personalized Insurance Recommendations</h1>
           <p> With ViTech Insurance Analytics (VIA), you can find your life insurance quote with just a few simple questions!</p> 
           <p>Simply enter your information below, and we will provide a personalized insurance estimate.</p>
         </div>
@@ -64,13 +66,18 @@
                <option value="blank"></option>
                <option value="S"> Single </option>
                <option value="M"> Married </option>
-               <option value="D"> Divorced </option>
-               <option value="W"> Widowed </option>
              </select>
             <br>
 
-            <label for="people_covered" > How many individuals will be covered? </label>
-            <input type="text" name="people_covered" placeholder="All covered individuals">
+             <label for="people_covered" > How many individuals will be covered? </label> 
+              <select id="people_covered" name="people_covered">
+               <option value="blank"></option>
+               <option value="1"> 1 </option>
+               <option value="2"> 2 </option>
+               <option value="3" > 3</option>
+               <option value="4">4</option>
+             </select>
+
             <img title="Enter the number of all individuals on the insurance plan, including yourself." src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20"> 
             <br>
           </div>
@@ -80,7 +87,7 @@
             <input type="text" id="lname" name="state" placeholder="The state you live in"> 
             <img title="Use the whole, nonabbreviated word for your state." src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20">
             <br>
-             <label>What is your latitude and longitude? If you do not know your exact location, click <a href="https://www.maps.ie/coordinates.html" target="_blank"> here</a>. </label> 
+             <label>What is your latitude and longitude? If you do not know your exact location, click <a href="https://www.maps.ie/coordinates.html" target="_blank"> here</a>. (Only whole numbers are accepted.) </label> 
             <br>
             <label for ="latitude">Latitude</label>
             <input type="text" name="latitude" placeholder="0"> 
@@ -96,7 +103,7 @@
             </select>
             <br>
 
-            <label for="optional_insured"> Optional: How much additional money would you like to add?</label>
+            <label for="optional_insured"> Optional: Additional Insurance Requested</label>
             <input type="text" name="optional_insured" placeholder="0">  <br>
 
             <label for"annual_income"> What is your annual income? </label>
