@@ -48,15 +48,11 @@
 <script type="text/javascript">function myFunction() {
     var elements = document.getElementById("myForm").elements;
     var obj ={};
-    global int ratio = 0;
     global int plan = 0;
     global annual_income = 0;
     global var planString = "";
     for(var i = 0 ; i < elements.length ; i++){
         var item = elements.item(i);
-        if (i==2){
-          ratio = int(item)/65;
-        }
         if (i==11){
           annual_income = int(item);
         }
@@ -70,16 +66,13 @@
       plan = 3;
       planString = "Gold";
     }
-    global int platinum_premium = 250 * ratio;
-    global int gold_premium = 190 * ratio;
-    global int silver_premium = 115 * ratio;
-    global int bronze_premium = 65* ratio;
     var fs = require('fs');
     var json = JSON.stringify(obj);
     fs.openFile('myjsonfile.json', json);
     fs.writeFile('myjsonfile.json', json);
-    fFunction();
-    planS();
+    
+    document.getElementById("myString").innerHTML = planString;
+    document.getElementById("myText").innerHTML = plan;
 
 }</script>
     
@@ -160,13 +153,7 @@
       </div>
     </form>
 <script>
-      
-      function fFunction(){
-      document.getElementById("myText").value = plan;
-    }
-  function planS() {
-    document.getElementById("myString").value = planString;
-  }
+   
     </script>
     <!-- Footer -->
     <footer class="py-5 bg-dark">
