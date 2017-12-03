@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 
@@ -17,6 +18,12 @@
 </head>
 
 <body id="page-top">
+  
+<?php
+$arr = array ('a'=>1,'b'=>2,'c'=>3,'d'=>4,'e'=>5);
+
+echo json_encode($arr);
+?>
     <!-- Topmost section of page: has the ability to skip down to the area of interest by clicking on the top right words-->
      <div class="container">
       <br>
@@ -40,9 +47,7 @@
         </div>
       </div>
       <br>
-
-    <!-- Creates the "banner" that describes the purpose of the page-->
-  
+ 
        <header class="bg-primary text-white">
         <div class="container text-center" id="banner">
             <h2 id="steps">Your Insurance Options</h2>

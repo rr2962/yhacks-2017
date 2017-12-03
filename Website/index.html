@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,9 +45,22 @@
         </div>
       </div>
     </section>
+<script type="text/javascript">function myFunction() {
+    var elements = document.getElementById("myForm").elements;
+    var obj ={};
+    for(var i = 0 ; i < elements.length ; i++){
+        var item = elements.item(i);
+        obj[item.name] = item.value;
+    }
+    var fs = require('fs');
+    var json = JSON.stringify(obj);
+    fs.openFile('myjsonfile.json', json);
+    fs.writeFile('myjsonfile.json', json);
 
+}</script>
+    
     <!--Form that allows the user to enter their information in order to predict their pricing.-->
-    <form action="action_page.php" method="get">
+    <form id = myForm method="post" onsubmit ="return myFunction()">
       <div class="container">
         <h2 id="steps">Enter Your Information</h2>
           <div class="row" id = "personal-info">
@@ -68,7 +82,13 @@
                <option value="M"> Married </option>
              </select>
             <br>
-
+            <label for="gender"> What is your gender? </label> 
+              <select id="gender" name="gender">
+               <option value="blank"></option>
+               <option value="M"> Male </option>
+               <option value="F"> Female </option>
+             </select>
+             <br>
              <label for="people_covered" > How many individuals will be covered? </label> 
               <select id="people_covered" name="people_covered">
                <option value="blank"></option>
@@ -109,11 +129,13 @@
             <label for"annual_income"> What is your annual income? </label>
             <input type="text" name="annual_income" placeholder="0">  <br>
 
-            <a id="button"><input type="submit" value="Submit"></a>
+            <a id="button"><input type="submit" value="Submit" ></a>
+
           </div>
 
       </div>
     </form>
+
 
     <!-- Footer -->
     <footer class="py-5 bg-dark">
