@@ -40,7 +40,7 @@
               <a class="nav-link js-scroll-trigger" href="#contact">Recommendations</a>
             </li>
           </ul>
-        </div>
+         </div>
       </div>
     </nav>
 
@@ -73,8 +73,10 @@
             <input type="text" id="lname" name="lastname" placeholder="Your last name.."> <br>
 
             <label for = "DOB"> Date of Birth </label>
-            <input type="text" id = "DOB" name="DOB" placeholder="YYYY-MM-DD"> <br>
-
+            <input type="text" id = "DOB" name="DOB" placeholder="YYYY-MM-DD">
+            <img title="Use the format 'YYYY-MM-DD' when entering your date of birth." src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20">
+            
+            <br>
             <label for="marital_status"> What is your marital status? </label> 
               <select id="marital_status" name="marital_status">
                <option value="blank"></option>
@@ -85,14 +87,18 @@
              </select>
              <br>
 
-            <label for="people_covered" > How many individuals will be covered including you? </label>
-            <input type="text" name="people_covered" placeholder="All covered individuals"> <br>
+            <label for="people_covered" > How many individuals will be covered? </label>
+            <input type="text" name="people_covered" placeholder="All covered individuals">
+            <img title="Enter the number of all individuals on the insurance plan, including yourself." src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20"> 
+            <br>
           </div>
           <div class="row" id="personal-info">
 
 
             <label for ="state"> State </label>
-            <input type="text" id="lname" name="state" placeholder="The state you live in"> <br>
+            <input type="text" id="lname" name="state" placeholder="The state you live in"> 
+            <img title="Use the whole, nonabbreviated word for your state." src="http://www.free-icons-download.net/images/blue-info-button-icon-50693.png" alt="information" height="20" width="20">
+            <br>
              <label>What is your latitude and longitude? If you do not know your exact location, click <a href="https://www.maps.ie/coordinates.html" target="_blank"> here</a>. </label>  <br>
             <label for ="latitude">Latitude</label>
             <input type="text" name="latitude" placeholder="0"> <br>
@@ -111,7 +117,7 @@
 
             <label for"annual_income"> What is your annual income? </label>
             <input type="text" name="annual_income" placeholder="0">  <br>
-          <a><input type="submit" value="Submit"></a>
+          <a id="button"><input type="submit" value="Submit"></a>
           </div>
 
         </div>
