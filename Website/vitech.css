@@ -8,7 +8,7 @@
 	text-orientation: center;
 	color: white;
 	background-color: rgba(0, 121, 178,0.4);
-	padding: 30px;
+	padding: 20px;
 }
 #personal-info {
 	padding-left: 10px;
@@ -35,6 +35,12 @@ label {
 th {
 	font-size: 30px;
 	color:white;
+	text-align: center;
+}
+td {
+	font-size: 40px;
+	color: white;
+	text-align: center;
 }
 
 #button a:hover { 
