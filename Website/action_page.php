@@ -51,7 +51,9 @@
 
       <br>
     <!-- Creates the comparison table-->
-      <h2>Platinum, Gold, Silver and Bronze Plans Information</h2>
+      <div class="row">
+          <h2 style="text-align: center; font-size: 40px;" >Platinum, Gold, Silver and Bronze Plans Information</h2>
+      </div>
       <table width="100%" id = "options">
         <thead> 
           <tr id= "steps">
@@ -73,20 +75,20 @@
           <div class="row">
         <tr>
             <td> <img src="https://blueastral.com/wp-content/uploads/platinum_opt.png" alt="Platinum" style="color: rgb(226, 226, 226)" height="120"; width="120"> </td>
-            <td>110</td>
-            <td>50,000</td>
-            <td>3,000</td>
-            <td>100,000</td>
+            <td>$110</td>
+            <td>$50,000</td>
+            <td>$3,000</td>
+            <td>$100,000</td>
         </tr>
       </div>
       <!--gold-->
       <div class="row">
         <tr>
           <td> <img src="http://vignette2.wikia.nocookie.net/criminal-case-grimsborough/images/a/a9/Gold_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140102" alt="Gold" style="color: rgb(255, 233, 0)" height="140"; width="100"> </td>
-            <td>70</td>
-            <td>30,000</td>
-            <td>5,000</td>
-            <td>100,000</td>
+            <td>$70</td>
+            <td>$30,000</td>
+            <td>$5,000</td>
+            <td>$100,000</td>
         </tr>
       </div>
       <!--silver-->
@@ -94,20 +96,20 @@
         <tr>
           <td> <img src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough/images/7/7f/Silver_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140409" alt="Silver"  style="color: rgb(153, 153, 153)" height="140"; width="100"> </td>
                     
-            <td>40</td>
-            <td>20,000</td>
-            <td>7,000</td>
-            <td>100,000</td>
+            <td>$40</td>
+            <td>$20,000</td>
+            <td>$7,000</td>
+            <td>$100,000</td>
         </tr>
       </div>
       <!--bronze-->
       <div class="row">
         <tr>
           <td> <img src="http://vignette4.wikia.nocookie.net/criminal-case-grimsborough/images/7/71/Bronze_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140520" alt="Bronze" style="color: rgb(193, 146, 3);" height="140" width="100"> </td>         
-            <td>20</td>
-            <td>10,000</td>
-            <td>8,000</td>
-            <td>100,000</td>
+            <td>$20</td>
+            <td>$10,000</td>
+            <td>$8,000</td>
+            <td>$100,000</td>
         </tr>
       </div>
     </tbody>
