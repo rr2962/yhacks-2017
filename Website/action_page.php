@@ -19,51 +19,68 @@
 <body id="page-top">
      <div class="container">
       <br>
-        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 45px; color: white"> ViTech Insurance Analytics</a>
+        <a class="navbar-brand js-scroll-trigger" href="#page-top" style="font-size: 45px; color: white"> ViTech Insurance Analytics
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        &nbsp
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto" id = "menu">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#options">Options</a>&nbsp&nbsp
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#recommendations">Recommendations</a>
+            </li>
+          </ul>
+        </div>
       </div>
+      <br>
     <section id="services" class="bg-light">
       <div class="container">
         <div class="row">
 
    <header class="bg-primary text-white">
     
-      <div class="container text-center">
+      <div class="container text-center" id="banner">
         <h2 id="steps">Your Insurance Options</h2>
         <p class="lead">Compare coverage and prices side by side</p>
         
       </div>
-
     </header>
         </div>
-            <p class="lead">Bronze, Silver, Gold, and Platinum Plans Information</p>
-          <div class="table" id = "options" >
+        <br>
+        <div class="table" id = "options" >
+            <h2>Bronze, Silver, Gold, and Platinum Plans Information</h2>
+          
             <table width="100%">
               <thead> 
-                <tr>
+                <tr id="steps">
 
-                  <th style="fill: gray"> </th>
+                  <th> Plan Type </th>
                   <th> Benefits  </th>
                   <th> Premium </th>
                 <th> Deductible </th>
               </tr>
             <div class="row">
               <tr>
-                <th style="color: rgb(226, 226, 226)"> Platinum </th>
+                <th > <img src="https://blueastral.com/wp-content/uploads/platinum_opt.png" alt="Platinum" style="color: rgb(226, 226, 226)" height="120"; width="120"> </th>
               </tr>
             </div>
             <div class="row">
               <tr>
-                <th style="color: rgb(255, 233, 0)"> Gold </th>
+                <th> <img src="http://vignette2.wikia.nocookie.net/criminal-case-grimsborough/images/a/a9/Gold_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140102" alt="Gold" style="color: rgb(255, 233, 0)" height="140"; width="100"> </th>
               </tr>
             </div>
             <div class="row">
               <tr>
-                <th style="color: rgb(153, 153, 153)"> Silver </th>
+                <th> <img src="https://vignette.wikia.nocookie.net/criminal-case-grimsborough/images/7/7f/Silver_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140409" alt="Silver"  style="color: rgb(153, 153, 153)" height="140"; width="100"> </th>
               </tr>
             </div>
             <div class="row">
               <tr>
-                <th style="color: rgb(193, 146, 3)"> Bronze </th>
+                <th> <img src="http://vignette4.wikia.nocookie.net/criminal-case-grimsborough/images/7/71/Bronze_Medal_%28CCW_Awards%29.png/revision/latest?cb=20160101140520" alt="Bronze" style="color: rgb(193, 146, 3);" height="140" width="100"> </th>
               </tr>
             </div>
             </thead>
@@ -73,7 +90,7 @@
       </div>
     </section>
 
-    <section id="contact">
+    <section id="recommendations">
       <div class="container">
         <div class="row">
           <div class="col-lg-8 mx-auto">
@@ -82,6 +99,15 @@
         </div>
       </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="m-0 text-center text-white">Copyright &copy; ViTech Analytics</p>
+      </div>
+      <!-- /.container -->
+    </footer>
+
         <!-- Bootstrap core JavaScript -->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

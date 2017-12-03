@@ -7,9 +7,9 @@
 	font-size: 30px;
 	text-orientation: center;
 	color: white;
-	background-color: rgba(0, 121, 178,0.6);
+	background-color: rgba(0, 121, 178,0.4);
 	border-radius: 10px;
-	padding-left: 10px;
+	padding: 30px;
 }
 #personal-info {
 	padding-left: 10px;
@@ -24,4 +24,20 @@
 
 label {
 	font-family: "Verdana";
+}
+#banner {
+	align-content: center;
+}
+
+#menu {
+	font-size: 20px;
+	list-style: none;
+}
+th {
+	font-size: 30px;
+	color:white;
+}
+
+a:hover { 
+  opacity:1;
 }
