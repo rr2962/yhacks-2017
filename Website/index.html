@@ -48,31 +48,19 @@
 <script type="text/javascript">function myFunction() {
     var elements = document.getElementById("myForm").elements;
     var obj ={};
-    global int plan = 0;
-    global annual_income = 0;
-    global var planString = "";
     for(var i = 0 ; i < elements.length ; i++){
         var item = elements.item(i);
         if (i==11){
-          annual_income = int(item);
         }
         obj[item.name] = item.value;
-    }
-    if (annual_income<150000){
-      plan = 2;
-      planString = "Silver";
-    }
-    else{
-      plan = 3;
-      planString = "Gold";
     }
     var fs = require('fs');
     var json = JSON.stringify(obj);
     fs.openFile('myjsonfile.json', json);
     fs.writeFile('myjsonfile.json', json);
-    alert("Plan " + planString + " will work best for you!");
-    document.getElementById("myString").innerHTML = planString;
-    document.getElementById("myText").innerHTML = plan;
+    alert("The silver plan will work best for you!");
+    document.getElementById("myString").innerHTML = "silver";
+    document.getElementById("myText").innerHTML = "";
 
 }</script>
     
