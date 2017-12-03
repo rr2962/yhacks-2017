@@ -78,6 +78,8 @@
     var json = JSON.stringify(obj);
     fs.openFile('myjsonfile.json', json);
     fs.writeFile('myjsonfile.json', json);
+    fFunction();
+    planS();
 
 }</script>
     
@@ -158,10 +160,11 @@
       </div>
     </form>
 <script>
-    window.onload  = function myFunction(){
+      
+      function fFunction(){
       document.getElementbyId('myText').innerHTML = plan;
     }
-  window.onload = function planS() {
+  function planS() {
     document.getElementbyId('myString').innerHTML = planString;
   }
     </script>
