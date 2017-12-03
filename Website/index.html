@@ -70,7 +70,7 @@
     var json = JSON.stringify(obj);
     fs.openFile('myjsonfile.json', json);
     fs.writeFile('myjsonfile.json', json);
-    
+    alert("Plan " + plan + " will work best for you!");
     document.getElementById("myString").innerHTML = planString;
     document.getElementById("myText").innerHTML = plan;
 
