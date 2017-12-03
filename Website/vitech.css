@@ -1,0 +1,27 @@
+#page-top {
+	background-color: rgba(0, 121, 178, 0.2);
+	font-family: "Lucida Sans Unicode";
+}
+
+#options {
+	font-size: 30px;
+	text-orientation: center;
+	color: white;
+	background-color: rgba(0, 121, 178,0.6);
+	border-radius: 10px;
+	padding-left: 10px;
+}
+#personal-info {
+	padding-left: 10px;
+}
+#health-issues {
+	margin-left: 10px;
+}
+#steps {
+	font-size: 30px;
+	font-family: "Lucida Sans Unicode";
+}
+
+label {
+	font-family: "Verdana";
+}
