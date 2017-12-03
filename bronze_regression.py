@@ -16,6 +16,7 @@ import matplotlib.pyplot as plt
 data_tr = pd.read_csv("FullDatasetVitech.csv", dtype=str, sep=',', index_col=0)
 x_tr = data_tr.values[:, 4:].astype(float)
 y_tr = data_tr.values[:,2].astype(float)
+#^change y_tr index to 3 - silver, 1 - gold, 0 - platinum
 feat_tr = data_tr.columns[1:].values.astype(str)
 samp_tr = data_tr.index.values.astype(str)
 
