@@ -51,6 +51,7 @@
     global int ratio = 0;
     global int plan = 0;
     global annual_income = 0;
+    global var planString = "";
     for(var i = 0 ; i < elements.length ; i++){
         var item = elements.item(i);
         if (i==2){
@@ -63,9 +64,11 @@
     }
     if (annual_income<150000){
       plan = 2;
+      planString = "Silver";
     }
     else{
       plan = 3;
+      planString = "Gold";
     }
     global int platinum_premium = 250 * ratio;
     global int gold_premium = 190 * ratio;
@@ -151,13 +154,16 @@
             <a id="button"><input type="submit" value="Submit" ></a>
 
           </div>
-        <p>Based on our analysis, we recommend that you purchase plan <span id="myText"></span>.</p>
+        <p>Based on our analysis, we recommend that you purchase the <span id= "myString"></span> plan <span id="myText"></span>.</p>
       </div>
     </form>
 <script>
     function myFunction(){
       document.getElementbyId("myText").innerHTML = plan;
     }
+  function planS() {
+    document.getElementbyId("myString").innerHTML = planString;
+  }
     </script>
     <!-- Footer -->
     <footer class="py-5 bg-dark">
